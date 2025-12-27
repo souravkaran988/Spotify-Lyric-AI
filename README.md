@@ -45,6 +45,12 @@ The model was evaluated on a held-out test set of **100 random song snippets** (
 
 ---
 
+### Note on Data
+The dataset is compressed as `spotify_songs.zip`.
+Please unzip it to get `spotify_songs.csv` before running the app.
+
+---
+
 ## 📂 Project Structure
 
 | File | Description |
@@ -70,4 +76,5 @@ Follow these steps to run the project on your local machine.
 ### Step 1: Clone the Repository
 ```bash
 git clone [https://github.com/souravkaran988/Spotify-Lyric-AI.git](https://github.com/souravkaran988/Spotify-Lyric-AI.git)
+
 cd Spotify-Lyric-AI
