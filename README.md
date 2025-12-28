@@ -65,7 +65,7 @@ The model was evaluated on a held-out test set of **100 random song snippets** (
 ---
 
 ## 📂 Project Structure
-
+```bash
 Spotify-Lyric-AI/
 │
 ├── app.py                # The main Streamlit website script
@@ -77,6 +77,8 @@ Spotify-Lyric-AI/
 ├── lyric_model.keras     # (Generated) The saved AI Brain
 ├── song_vectors.npy      # (Generated) The pre-calculated search vectors
 └── songs_df.pkl          # (Generated) The fast-access song database
+
+```
 
 ---
 
@@ -94,4 +96,39 @@ Follow these steps to run the project on your local machine.
 - OR (https://github.com/souravkaran988/Spotify-Lyric-AI.git)
 
 cd Spotify-Lyric-AI
+```
+---
 
+
+### Step 2: Install Dependencies
+Install the required Python libraries listed in `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+
+```
+---
+
+
+### Step 3: Run the Application
+Launch the web interface using Streamlit:
+
+```bash
+python -m streamlit run app.py
+The app will start, and a new tab should automatically open in your browser at http://localhost:8501.
+
+```
+--- 
+
+
+### Step 4: (Optional) Retrain the Model
+
+If you add new songs to spotify_songs.csv and want to update the AI:
+
+- Open main.ipynb in VS Code or Jupyter Notebook.
+
+- Run all cells from Step 1 to Step 6.
+
+- This will regenerate the lyric_model.keras and songs_df.pkl files.
+
+- Restart the app to see the changes.
